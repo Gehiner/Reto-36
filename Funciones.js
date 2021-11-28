@@ -13,20 +13,15 @@ function defNumeroDeDados(nDados)
 
 function tiroNDados()
 {
+    imprimirResultado.innerHTML = '';
+    imprimirImagenes.innerHTML = '';    
     var total = 0;
     let nTiros = numeroDeDados
     for(var x = 0; x < nTiros; x++){
         let resultadoDados = (aleatorio(1,6)) - 1;
         console.log(dados[resultadoDados].imagen.src, dados[resultadoDados].valor, nTiros, resultadoDados);
-        dadosATirar.push(new Dado(dados[resultadoDados].imagen.src,dados[resultadoDados].valor) );
+        imprimirImagenes.innerHTML = imprimirImagenes.innerHTML + "<img src=" + " \" " + dados[resultadoDados].imagen.src+ " \" " + "/>";
         total = total + dados[resultadoDados].valor;
     }
     imprimirResultado.innerHTML = total;
-    imprimirDados();
-}
-
-function imprimirDados(){
-    for( var lanzar of dadosATirar){
-        imprimirImagenes.innerHTML = imprimirImagenes.innerHTML + "<img src=" + " \" " + lanzar.imagen.src+ " \" " + "/>";  
-    }
 }
