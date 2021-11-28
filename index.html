@@ -7,6 +7,13 @@
     <title>Dado de seis caras</title>
 </head>
 <body>
+    <p>
+        <input type="number" placeholder="numero de dados" oninput="defNumeroDeDados(this.value);">
+        <button onclick="tiroNDados();">Tirar Dados</button>
+    </p>
+    <p id="imagenes"></p>
+    <p id="resultado"></p>
+    <script src="Funciones.js"></script>
     <script src="Dado.js"></script>
     <script src="index.js"></script>
 </body>

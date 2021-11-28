@@ -4,3 +4,5 @@ class Dado{
         this.valor = valor;
     }
 }
+
+
