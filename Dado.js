@@ -1,8 +1,11 @@
 class Dado{
     constructor(url, valor){
-        this.src = url;
+        this.imagen = new Image;
+        this.imagen.src = url;
         this.valor = valor;
     }
 }
+
+
 
 

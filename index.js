@@ -1,6 +1,8 @@
 var dados = [];
 var numeroDeDados = 0;
 
+var dadosATirar = [];
+
 var imprimirImagenes = document.getElementById('imagenes');
 var imprimirResultado = document.getElementById('resultado');
 
@@ -10,5 +12,7 @@ dados.push(new Dado("imagenes/dado3.png", 3))
 dados.push(new Dado("imagenes/dado4.png", 4))
 dados.push(new Dado("imagenes/dado5.png", 5))
 dados.push(new Dado("imagenes/dado6.png", 6))
+
+imprimirImagenes = "<img src=" + " \" " + dados.imagen.src + " \" " + "/>";  
 
 
