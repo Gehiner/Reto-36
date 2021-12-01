@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Dado de seis Caras</title>
 </head>
 <body>
-    <p>
-        <input type="number" placeholder="numero de Dados" oninput="defNumeroDeDados(this.value);">
-        <button onclick="tiroNDados();">Tirar Dados</button>
-    </p>
-    <p id="imagenes"></p>
-    <p id="resultado"></p>
+    <h1>Juego de Dados para tres</h1>
+    <div >
+        <div id="jugadores">
+            <p id="jugador1">Jugador 1</p>
+            <p id="jugador2">Jugador 2</p>
+            <p id="jugador3">Jugador 3</p>
+            <p id="totalJugador1">Total</p>
+            <p id="totalJugador2">Total</p>
+            <p id="totalJugador3">Total</p>
+        </div>
+        <div id="dados">
+            <p id="dadosJugador1">Dados</p>
+            <p id="dadosJugador2">Dados</p>
+            <p id="dadosJugador3">Dados</p>
+        </div>
+    </div>
     <script src="Funciones.js"></script>
     <script src="Dado.js"></script>
     <script src="index.js"></script>

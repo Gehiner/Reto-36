@@ -1,0 +1,25 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    text-align: center;
+}
+#jugadores{
+    display: grid;
+    grid-template-columns: repeat(3,580px);
+    grid-template-rows: 50 repeat(2,10px);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+#dados{
+    display: grid;
+    grid-template-columns: repeat(3,580px);
+    grid-template-rows: 160px repeat(0,630px);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
