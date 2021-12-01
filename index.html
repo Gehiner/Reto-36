@@ -8,6 +8,9 @@
     <title>Dado de seis Caras</title>
 </head>
 <body>
+    <nav>
+        <button onclick="cambiarNombreDeJugadores();"> Cambiar nombre de jugadores</button>
+    </nav>
     <h1>Juego de Dados para tres</h1>
     <div>
         <div id="jugadores">
@@ -19,13 +22,12 @@
             <p id="totalJugador3" class="total"></p>
         </div>
         <div id="dados">
-            <p id="dadosJugador1" class="imagenesDeDados">Dados</p>
-            <p id="dadosJugador2" class="imagenesDeDados">Dados</p>
-            <p id="dadosJugador3" class="imagenesDeDados">Dados</p>
+            <p id="dadosJugador1" class="imagenesDeDados"></p>
+            <p id="dadosJugador2" class="imagenesDeDados"></p>
+            <p id="dadosJugador3" class="imagenesDeDados"></p>
         </div>
     </div>
-    <button onclick="cambiarNombreDeJugadores();"> Cambiar nombre de jugadores</button>
-    <button onclick="jugar();"> Jugar</button>
+    <input type="button" id="jugar" onclick="jugar();" value="A Jugar"></input>
     <script src="Jugadores.js"></script>
     <script src="Funciones.js"></script>
     <script src="Dado.js"></script>

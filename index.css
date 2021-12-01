@@ -1,8 +1,10 @@
 body{
+    background-color: #D9AD1C;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1{
     text-align: center;
+    font-size: 35px;
 }
 #jugadores{
     display: grid;
@@ -13,6 +15,9 @@ h1{
     margin: auto;
     text-align: center;
 }
+p{
+    font-size: 20px;
+}
 
 #dados{
     display: grid;
@@ -22,5 +27,15 @@ h1{
     align-items: center;
     margin: auto;
     text-align: center;
+}
+
+button{
+    font-size: 18px;
+}
+#jugar{
+    font-size: 18px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
