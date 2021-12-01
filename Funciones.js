@@ -25,3 +25,9 @@ function tiroNDados()
     }
     imprimirResultado.innerHTML = total;
 }
+
+function cambiarNombreDeJugadores(){
+  jugador1.innerHTML = prompt("Nombre jugador1");
+  jugador2.innerHTML = prompt("Nombre jugador2");
+  jugador3.innerHTML = prompt("Nombre jugador3");
+}

@@ -13,6 +13,8 @@ dados.push(new Dado("imagenes/dado4.png", 4))
 dados.push(new Dado("imagenes/dado5.png", 5))
 dados.push(new Dado("imagenes/dado6.png", 6))
 
-imprimirImagenes = "<img src=" + " \" " + dados.imagen.src + " \" " + "/>";  
+var player1 = document.getElementById("jugador1");
+var jugador2 = document.getElementById('jugador2');
+var jugador3 = document.getElementById('jugador3');
 
-
+var color = document.getElementById('color');
