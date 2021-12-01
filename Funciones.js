@@ -5,29 +5,35 @@ function aleatorio(min, maxi)
   return resultado;
 }
 
-
-function defNumeroDeDados(nDados)
+function jugar()
 {
-   return numeroDeDados = nDados;
-}
-
-function tiroNDados()
-{
-    imprimirResultado.innerHTML = '';
-    imprimirImagenes.innerHTML = '';    
-    var total = 0;
-    let nTiros = numeroDeDados
-    for(var x = 0; x < nTiros; x++){
-        let resultadoDados = (aleatorio(1,6)) - 1;
-        console.log(dados[resultadoDados].imagen.src, dados[resultadoDados].valor, nTiros, resultadoDados);
-        imprimirImagenes.innerHTML = imprimirImagenes.innerHTML + "<img src=" + " \" " + dados[resultadoDados].imagen.src+ " \" " + "/>";
-        total = total + dados[resultadoDados].valor;
+  var iteracion = 0;
+  for(var x in players)
+  {
+    imagenesDeDados[iteracion].innerHTML = '';
+    var puntajeAleatorio ;
+    for(var y = 0; y < 2; y++){
+      puntajeAleatorio = aleatorio(1,6);
+      x.puntaje = x.puntaje + puntajeAleatorio;
+      imagenesDeDados[iteracion].innerHTML = imagenesDeDados[iteracion].innerHTML + dados[puntajeAleatorio - 1].imagen.src;
     }
-    imprimirResultado.innerHTML = total;
+  }
 }
 
 function cambiarNombreDeJugadores(){
-  jugador1.innerHTML = prompt("Nombre jugador1");
-  jugador2.innerHTML = prompt("Nombre jugador2");
-  jugador3.innerHTML = prompt("Nombre jugador3");
+  playersInGame[0].innerHTML = prompt("Nombre jugador1");
+  players[0].namePlayer = jugador1.innerHTML;
+  playersInGame[1].innerHTML = prompt("Nombre jugador2");
+  players[1].namePlayer = jugador2.innerHTML;
+  playersInGame[2].innerHTML = prompt("Nombre jugador3");
+  players[2].namePlayer = jugador3.innerHTML;
 }
+
+
+function agregarJugadores(){
+  players.push(new Jugadores(playersInGame[0].innerHTML, NaN));
+  players.push(new Jugadores(playersInGame[1].innerHTML, NaN));
+  players.push(new Jugadores(playersInGame[2].innerHTML, NaN));
+}
+imagenesDeDados[0] = 
+jugar();

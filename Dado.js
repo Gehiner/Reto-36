@@ -3,7 +3,9 @@ class Dado{
         this.imagen = new Image;
         this.imagen.src = url;
         this.valor = valor;
+        this.resultado = 0;
     }
+
 }
 
 
